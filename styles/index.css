@@ -1,0 +1,354 @@
+
+/*КЛАСИ ЕЛЕМЕНТІВ ТЕКСТУ ------------------------------------------------------------------------------------------------------*/
+.tittle{
+    font-size: var(--h2); /*розмір тексту заголовків можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт заголовків можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    margin-bottom: 40px;
+}
+
+.usual-text{
+    font-size: var(--body); /*розмір тексту заголовків можна змінити туть*/
+    font-family: var(--roboto-font); /*шрифт заголовків можна змінити туть*/
+    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.usual-text-bold{
+    font-size: var(--body); /*розмір тексту заголовків можна змінити туть*/
+    font-family: var(--roboto-font); /*шрифт заголовків можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.label-text{
+    font-size: var(--label); /*розмір тексту заголовків карток можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.accent-text{
+    font-size: var(--accent); /*розмір тексту можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.slogan{
+    font-size: var(--h1); /*розмір тексту слогану можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт слогану можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.sub-slogan{
+    font-size: var(--label); /*розмір тексту під-слогану можна змінити туть*/
+    font-family: var(--roboto-font); /*шрифт під-слогану можна змінити туть*/
+    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    margin-top: 40px;
+    margin-bottom: 56px;
+}
+
+.small-text{
+    font-size: var(--small); /*розмір тексту заголовків можна змінити туть*/
+    font-family: var(--roboto-font); /*шрифт заголовків можна змінити туть*/
+    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+}
+
+.menu-text{
+    font-family: var(--ubuntu-font); /*змінити шрифт менюшки можна туть*/
+    font-weight: var(--font-weight-bold); /*змінити жирність шрифта менюшки можна туть*/
+    font-size: var(--body); /*змінити розмір шрифта менюшки можна туть*/
+    color: var( --color-dark); /*змінити колір елементів меню можна туть*/
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*КЛАСИ ДЛЯ НАВІГАЦІЙНОЇ ПАНЕЛІ -----------------------------------------------------------------------------------------------*/
+.navbar{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+.align-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-logo{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbar-menu-item{
+    text-decoration: none; /*забирає дефолтні підкреслення посилань та інші налаштування браузера, не видаляти*/
+    padding: 10px 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.navbar-menu-item:hover {
+    border-radius: 12px;
+    border-color: var(--color-grey-dark);
+}
+
+.navbar-icons img{ 
+    cursor: pointer;
+}
+
+.navbar-icons, .hide{
+    display: none;
+}
+
+hr { 
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--color-grey-dark);
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/*КЛАСИ ДЛЯ СЕКЦІЇ 1 - БАНЕР --------------------------------------------------------------------------------------------------*/
+.section-1{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    background-color: var(--color-grey-light);
+    padding: 80px 40px;
+    border-radius: 40px;
+}
+
+.image-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/* КЛАСИ ДЛЯ СЕКЦІЇ 2 - ПРО НАС -----------------------------------------------------------------------------------------------*/
+.section-2-cards-container{
+    margin-top: -24px;
+}
+
+.card-section-2{
+    background-color: var(--color-grey-light); /*колір карток можна змінити туть*/
+    height: auto;
+    padding: 40px;
+    border-radius: 22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px; 
+}
+
+.gaps-for-card{
+    margin-top: 24px;
+}
+
+.fit-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 20px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/* КЛАСИ ДЛЯ СЕКЦІЇ 3 - ЦІННОСТІ ----------------------------------------------------------------------------------------------*/
+.section-gap{
+    margin-top: 100px;
+}
+
+.gap-40px{
+    margin-bottom: 40px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/* КЛАСИ ДЛЯ СЕКЦІЇ 4 - ФАКТИ -------------------------------------------------------------------------------------------------*/
+.section-4-container{
+    background-color: var(--color-grey-light);
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.card-tittle-section-4{
+    height: auto;
+    color: var(--color-grey-dark);
+    font-size: var(--h2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.card-content-section-4{
+    background-color: var(--color-grey-light);
+    height: auto;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 24px;
+    border-radius: 18px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/* КЛАСИ ДЛЯ СЕКЦІЇ 5 - КОМАНДА -----------------------------------------------------------------------------------------------*/
+.card-section-5 {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gap-30px {
+  margin-top: 30px;
+}
+
+.gap-16px {
+  margin-top: 16px;
+}
+
+.name-box{
+    background-color: var(--color-grey-dark);
+    padding: 16px 20px;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.position-box{
+    padding: 24px;
+}
+
+.member-box{
+    background-color: var(--color-grey-light);
+    margin-top: 24px;
+    border-radius: 16px;
+    width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* КЛАСИ ДЛЯ СЕКЦІЇ 6 - ЗВ'ЯЗОК -----------------------------------------------------------------------------------------------*/
+.btn-align{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.image-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-6{
+    background-color: var(--color-grey-light);
+    padding: 60px 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* КЛАСИ ДЛЯ СЕКЦІЇ 7 - FAQ --------------------------------------------------------------------------------------------------*/
+.faq-section {
+    max-width: 100%;
+}
+
+.faq-padding{
+    padding: 26px 40px;
+}
+
+.arrow-padding{
+    padding: 20px 40px 20px 20px;
+}
+
+
+.arrow-icon{
+    height: 40px;
+    width: 40px;
+}
+
+details {
+    margin-bottom: 40px; 
+    overflow: hidden;
+}
+
+summary {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: pointer; 
+    list-style: none; 
+    user-select: none;
+    background-color: var(--color-grey-light); /* Задній колір шапки відкриваючого списку можна задати тут */
+    border-radius: 18px; /* заокруглення кутів можна задати тут */
+}
+
+/* Приховуємо маркер за замовчуванням, щоб поставити свій */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.opened-content {
+    background-color: transparent; /* Задній колір можна задати тут */
+    padding: 40px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* КЛАСИ ДЛЯ ФУТЕРА -----------------------------------------------------------------------------------------------*/
+.center-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+footer{
+    background-color: var(--color-grey-dark); /*змінити задній колір футера можна туть*/
+    padding: 40px 0;
+}
+
+.gap-20px{
+    margin-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/

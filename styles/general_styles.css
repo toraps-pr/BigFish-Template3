@@ -1,0 +1,448 @@
+/* все що в :root це css змінні, кольори, шрифти ітд. 
+які ми будемо використовувати повторно для стилізації нашої сторінки, 
+для того щоб створити свою змінну її ім'я має починатися з -- (двох дефісів)*/
+
+:root{
+    /*кольори (задавати ці змінні у валастивості color та background-color) (можна змінити/додати свої)*/
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-grey-dark: #929292;
+    --color-grey-light: #D9D9D9;
+
+    /*розміри шрифтів (задавати ці змінні у валастивості font-size) (можна змінити/додати свої)*/
+    --h1: 48px;
+    --h2: 36px;
+    --label: 24px;
+    --body: 20px;
+    --accent: 26px;
+    --small: 18px;
+
+    /*шрифти (задавати ці змінні у валастивості font-family) 
+    (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
+    --ubuntu-font: "Ubuntu", sans-serif;
+    --roboto-font: "Roboto", sans-serif;
+
+    /*жирність шрифтів (задавати ці змінні у валастивості font-weight)
+    (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+/*задаємо загальний стиль для всіх кнопок*/
+.custom-button{
+    cursor: pointer;
+    font-size: var(--label); /*розмір тексту кнопки можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт кнопки можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту кнопки можна змінити туть*/
+    color: var(--color-light); /*колір тексту можна змінити туть*/
+    background-color: var(--color-dark); /*колір самої кнопки можна змінити туть*/
+    border: solid; /*задати контур кнопки*/
+    border-color: transparent;
+    border-width: 4px;
+    border-radius: 18px; /*радіус кнопки можна змінити туть*/
+    padding: 16px 60px; 
+}
+
+/*задаємо загальний стиль для всіх кнопок при наведенні мишкою*/
+.custom-button:hover{
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    background-color: transparent; /*колір самої кнопки можна змінити туть*/
+    border-color: var(--color-dark);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------
+! ВСЕ ЩО ДАЛІ ЧІПАТИ НЕ МОЖНА
+-----------------------------------------------------------------------------------------------------*/
+
+/*стиль для всіх елементів на сторінці*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*робимо футер прижатим до низу сторінки*/
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main{
+    flex-grow: 1;
+}
+
+
+/*цей клас вирівнює розділи по центру сторінки і дає однакові відступи від країв екрану*/
+.container {
+    max-width: 1360px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*адаптивність зображень*/
+.responsive-image{
+    max-width: 100%;
+    height: auto;
+}
+
+/*розмітка по колонках*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px; 
+}
+
+.span-1 {
+    grid-column: span 1; 
+}
+
+.span-2 {
+    grid-column: span 2; 
+}
+
+.span-3 {
+    grid-column: span 3; 
+}
+
+.span-4 {
+    grid-column: span 4; 
+}
+
+.span-5 {
+    grid-column: span 5; 
+}
+
+.span-6 {
+    grid-column: span 6; 
+}
+
+.span-7 {
+    grid-column: span 7; 
+}
+
+
+.span-8 {
+    grid-column: span 8; 
+}
+
+
+.span-12 {
+    grid-column: span 12; 
+}
+
+.span-8-start-3 {
+    grid-column: 3 / span 8; /* починається з 3-ї колонки, займає 8 */
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.span-6-start-4 {
+    grid-column: 4 / span 6;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+}
+
+.span-2-start-6 {
+    grid-column: 6 / span 2; 
+    display: flex;
+    justify-content: center;      
+    text-align: center;
+}
+
+.span-6-start-2 {
+    grid-column: 2 / span 6; /* Починається з 2-ї колонки і займає 6 */
+}
+
+.span-4-start-8 {
+    grid-column: 8 / span 4; /* Починається з 8-ї колонки і займає 4 */
+}
+
+.span-10-start-2 {
+    grid-column: 2 / span 10;
+}
+
+/*адаптив для різних екранів*/
+@media (max-width: 1440px) { 
+    .container {
+        max-width: none; /* Знімаємо обмеження max-width, щоб контент розтягувався на менших екранах */
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+
+@media(max-width: 1220px){
+     :root {
+        --h1: 44px;
+    }
+}
+
+@media(max-width: 1180px){
+    
+    .span-3{
+        grid-column: span 6; 
+    }
+
+    .responsive-grid{
+        row-gap: 24px;
+    }
+
+    .responsive-grid-large{
+        row-gap: 60px;
+    }
+
+    .arrow-icon{
+        height: 36px;
+        width: 36px;
+    }
+
+    .span-8-start-3{
+        grid-column: 2 / span 10;
+    }
+}
+
+@media(max-width: 1120px){
+    .span-6{
+        grid-column: 2 / span 10; 
+    }
+
+    .responsive-align{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .fit-image{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-2-img{
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1020px) { 
+    .navbar-menu{
+        z-index: 1;
+        background-color: var(--color-light);
+        position: absolute;
+        top: 8vh;
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .navbar-icons{
+        display: block;
+    }
+
+    .navbar-menu-1{
+        margin-top: -300px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    :root {
+        --h1: 40px;
+        --h2: 30px;
+        --label: 20px;
+        --body: 18px;
+        --accent: 22px;
+        --small: 16px;
+    }
+
+    .arrow-icon{
+        height: 32px;
+        width: 32px;
+    }
+
+    .span-6-start-4{
+        grid-column: 3 / span 8;
+    }
+
+    .span-10-start-2{
+        grid-column: 1 / span 12;
+    }
+
+    .span-4 {
+        grid-column: span 6; 
+    }
+
+    .span-6{
+        grid-column: span 12; 
+    }
+
+}
+
+@media (max-width: 800px) {
+    :root {
+        --h1: 32px;
+        --h2: 24px;
+        --label: 18px;
+        --body: 16px;
+        --accent: 20px;
+        --small: 14px;
+    }
+
+    .span-4-start-8{
+        grid-column: 4 / span 6;
+    }
+
+    .span-6-start-2{
+        grid-column: 1 / span 12;
+        align-items: center;
+    }
+
+    .extra-span{
+        grid-column: 3 / span 2;
+    }   
+    
+    .reverse-section-6 > .section-6-image {
+        order: -1;
+    }
+
+    .section-6-image {
+        margin-bottom: 40px;
+    }
+
+    .span-2-start-6{
+        grid-column: 5 / span 4;
+    }
+
+    .tittle{
+        text-align: center;
+    }
+
+     .arrow-icon{
+        height: 30px;
+        width: 30px;
+    }
+
+    .custom-button{
+        border-width: 3px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    :root {
+        --h1: 30px;
+        --h2: 22px;
+        --label: 16px;
+        --body: 14px;
+        --accent: 18px;
+        --small: 12px;
+    }
+
+    .span-4 {
+        grid-column: span 12; 
+    }
+
+    .span-3 {
+        grid-column: span 12; 
+    }
+
+    .arrow-icon{
+        height: 26px;
+        width: 26px;
+    }
+
+    .span-6-start-4{
+        grid-column: 1 / span 12;
+    }
+
+    .span-8-start-3{
+        grid-column: 1 / span 12;
+    }
+
+    .section-gap{
+        margin-top: 60px;
+    }
+
+    .section-1{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .tittle{
+        margin-bottom: 20px;
+    }
+
+    .span-4-start-8{
+        grid-column: 3 / span 8;
+    }
+
+    .sub-slogan{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .card-content-section-4{
+        margin-top: 16px;
+    }
+
+    .button-wrapper{
+        margin-top: 40px;
+    }
+
+    .faq-padding{
+        padding: 16px 20px;
+    }
+
+    .arrow-padding{
+        padding: 16px 20px 16px 20px;
+    }
+
+    details {
+        border-radius: 12px; 
+        margin-bottom: 20px; 
+    }
+
+    .opened-content {
+        padding: 20px;
+    }
+
+    .gap-20px{
+        margin-bottom: 14px;
+    }
+
+    .responsive-grid-large{
+        row-gap: 40px;
+    }
+
+    .responsive-align{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .container {
+        max-width: none; 
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .arrow-icon{
+        height: 22px;
+        width: 22px;
+    }
+}

@@ -246,6 +246,7 @@ body, html{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 24px; 
     }
+
 }
 
 @media (max-width: 900px){
@@ -260,6 +261,14 @@ body, html{
 
     .span-6-start-4{
         grid-column: 2 / span 10;
+    }
+
+    .name-box, .member-box, summary{
+        border-radius: 12px;
+    }
+
+    .custom-button{
+        border-radius: 14px;
     }
 
 }
@@ -281,6 +290,7 @@ body, html{
 
     .custom-button{
         border-width: 3px;
+        padding: 14px 40px;
     }
 
     .card-content-section-4{
@@ -288,7 +298,11 @@ body, html{
     }
 
     .section-1{
-        border-radius: 30px; /*заокругленість кутів фону банера*/
+        border-radius: 30px; 
+    }
+
+    .navbar-menu{
+        gap: 30px;
     }
 }
 
@@ -380,6 +394,27 @@ body, html{
     .card-section-2{
         border-radius: 16px; /*заокругленість кутів картки*/
         padding: 20px;
+    }
+
+    .navbar-menu{
+        gap: 20px;
+    }
+
+    .navbar-menu-1{
+        margin-top: -400px;
+    }
+
+    .name-box, .member-box, summary{
+        border-radius: 10px;
+    }
+
+    hr { 
+        border-width: 1px; 
+    }
+
+    .navbar-logo{
+        width: 100px;
+        height: auto;
     }
 }
 

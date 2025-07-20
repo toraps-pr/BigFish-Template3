@@ -1,61 +1,36 @@
-/* все що в :root це css змінні, кольори, шрифти ітд. 
+/* все що в :root це css змінні, кольори, шрифти ітд.
 які ми будемо використовувати повторно для стилізації нашої сторінки, 
-для того щоб створити свою змінну її ім'я має починатися з -- (двох дефісів)*/
+для того щоб створити свою змінну її ім'я має починатися з -- (двох дефісів) */
 
 :root{
-    /*кольори (задавати ці змінні у валастивості color та background-color) (можна змінити/додати свої)*/
+    /*? кольори (задавати ці змінні у валастивості color та background-color) (можна змінити/додати свої)*/
     --color-light: #FFFFFF;
     --color-dark: #000000;
     --color-grey-dark: #929292;
     --color-grey-light: #D9D9D9;
 
-    /*розміри шрифтів (задавати ці змінні у валастивості font-size) (можна змінити/додати свої)*/
+    /*? розміри шрифтів (задавати ці змінні у валастивості font-size) (можна змінити/додати свої)*/
     --h1: 48px;
     --h2: 36px;
     --label: 24px;
     --body: 20px;
-    --accent: 26px;
+    --accent: 34px;
     --small: 18px;
 
-    /*шрифти (задавати ці змінні у валастивості font-family) 
-    (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
+    /*? шрифти (задавати ці змінні у валастивості font-family) (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
     --ubuntu-font: "Ubuntu", sans-serif;
     --roboto-font: "Roboto", sans-serif;
 
-    /*жирність шрифтів (задавати ці змінні у валастивості font-weight)
-    (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
+    /*? жирність шрифтів (задавати ці змінні у валастивості font-weight) (можна змінити/додати свої лише після того як в index.html в head додасте лінк на шрифти)*/
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 }
 
-/*задаємо загальний стиль для всіх кнопок*/
-.custom-button{
-    cursor: pointer;
-    font-size: var(--label); /*розмір тексту кнопки можна змінити туть*/
-    font-family: var(--ubuntu-font); /*шрифт кнопки можна змінити туть*/
-    font-weight: var(--font-weight-bold); /*жирність тексту кнопки можна змінити туть*/
-    color: var(--color-light); /*колір тексту можна змінити туть*/
-    background-color: var(--color-dark); /*колір самої кнопки можна змінити туть*/
-    border: solid; /*задати контур кнопки*/
-    border-color: transparent;
-    border-width: 4px;
-    border-radius: 18px; /*радіус кнопки можна змінити туть*/
-    padding: 16px 60px; 
-}
 
-/*задаємо загальний стиль для всіх кнопок при наведенні мишкою*/
-.custom-button:hover{
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
-    background-color: transparent; /*колір самої кнопки можна змінити туть*/
-    border-color: var(--color-dark);
-}
+/* !---------------------------------------------------------------------------------------------------
+! ВСЕ ЩО ДАЛІ ЧІПАТИ НЕ РЕКОМЕНДОВАНО, АДАПТИВНА ВЕРСТКА ДЛЯ МЕНШИХ ЕКРАНІВ
+!-----------------------------------------------------------------------------------------------------*/
 
-
-/* ---------------------------------------------------------------------------------------------------
-! ВСЕ ЩО ДАЛІ ЧІПАТИ НЕ МОЖНА
------------------------------------------------------------------------------------------------------*/
-
-/*стиль для всіх елементів на сторінці*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -78,14 +53,12 @@ body, html{
 }
 
 
-/*цей клас вирівнює розділи по центру сторінки і дає однакові відступи від країв екрану*/
 .container {
     max-width: 1360px; 
     margin-left: auto;
     margin-right: auto;
 }
 
-/*адаптивність зображень*/
 .responsive-image{
     max-width: 100%;
     height: auto;
@@ -102,35 +75,13 @@ body, html{
     grid-column: span 1; 
 }
 
-.span-2 {
-    grid-column: span 2; 
-}
-
 .span-3 {
     grid-column: span 3; 
-}
-
-.span-4 {
-    grid-column: span 4; 
-}
-
-.span-5 {
-    grid-column: span 5; 
 }
 
 .span-6 {
     grid-column: span 6; 
 }
-
-.span-7 {
-    grid-column: span 7; 
-}
-
-
-.span-8 {
-    grid-column: span 8; 
-}
-
 
 .span-12 {
     grid-column: span 12; 
@@ -144,30 +95,14 @@ body, html{
 }
 
 .span-6-start-4 {
-    grid-column: 4 / span 6;
-    display: flex;
-    justify-content: center; 
+    grid-column: 4 / span 6; 
     text-align: center;
-}
-
-.span-2-start-6 {
-    grid-column: 6 / span 2; 
-    display: flex;
-    justify-content: center;      
-    text-align: center;
-}
-
-.span-6-start-2 {
-    grid-column: 2 / span 6; /* Починається з 2-ї колонки і займає 6 */
-}
-
-.span-4-start-8 {
-    grid-column: 8 / span 4; /* Починається з 8-ї колонки і займає 4 */
 }
 
 .span-10-start-2 {
     grid-column: 2 / span 10;
 }
+
 
 /*адаптив для різних екранів*/
 @media (max-width: 1440px) { 
@@ -178,9 +113,8 @@ body, html{
     }
 }
 
-
 @media(max-width: 1220px){
-     :root {
+    :root {
         --h1: 44px;
     }
 }
@@ -207,11 +141,31 @@ body, html{
     .span-8-start-3{
         grid-column: 2 / span 10;
     }
+
+    .card-section-5{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px; 
+    }
+    
+    .gap-24px{
+        margin-top: 0px;
+    }
+
+    .tittle{
+        text-align: center;
+    }
+
+    .span-12{
+        grid-column: 2 / span 10;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media(max-width: 1120px){
     .span-6{
-        grid-column: 2 / span 10; 
+        grid-column: span 12; 
     }
 
     .responsive-align{
@@ -227,8 +181,12 @@ body, html{
         height: auto;
     }
 
-    .section-2-img{
-        margin-bottom: 40px;
+    .image-main{
+        align-items: center;
+    }
+
+    .span-6-start-4{
+        grid-column: 3 / span 8;
     }
 }
 
@@ -237,7 +195,7 @@ body, html{
         z-index: 1;
         background-color: var(--color-light);
         position: absolute;
-        top: 8vh;
+        top: 7vh;
         width: 100%;
         right: 0;
         height: 100vh;
@@ -260,15 +218,6 @@ body, html{
         display: none;
     }
 
-    :root {
-        --h1: 40px;
-        --h2: 30px;
-        --label: 20px;
-        --body: 18px;
-        --accent: 22px;
-        --small: 16px;
-    }
-
     .arrow-icon{
         height: 32px;
         width: 32px;
@@ -282,12 +231,35 @@ body, html{
         grid-column: 1 / span 12;
     }
 
-    .span-4 {
-        grid-column: span 6; 
-    }
-
     .span-6{
         grid-column: span 12; 
+    }
+}
+
+@media (max-width: 960px){
+    .span-3 {
+        grid-column: span 6; 
+    }
+    
+    .card-section-5{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px; 
+    }
+}
+
+@media (max-width: 900px){
+    :root {
+        --h1: 40px;
+        --h2: 30px;
+        --label: 20px;
+        --body: 18px;
+        --accent: 32px;
+        --small: 16px;
+    }
+
+    .span-6-start-4{
+        grid-column: 2 / span 10;
     }
 
 }
@@ -298,40 +270,11 @@ body, html{
         --h2: 24px;
         --label: 18px;
         --body: 16px;
-        --accent: 20px;
+        --accent: 24px;
         --small: 14px;
     }
 
-    .span-4-start-8{
-        grid-column: 4 / span 6;
-    }
-
-    .span-6-start-2{
-        grid-column: 1 / span 12;
-        align-items: center;
-    }
-
-    .extra-span{
-        grid-column: 3 / span 2;
-    }   
-    
-    .reverse-section-6 > .section-6-image {
-        order: -1;
-    }
-
-    .section-6-image {
-        margin-bottom: 40px;
-    }
-
-    .span-2-start-6{
-        grid-column: 5 / span 4;
-    }
-
-    .tittle{
-        text-align: center;
-    }
-
-     .arrow-icon{
+    .arrow-icon{
         height: 30px;
         width: 30px;
     }
@@ -340,6 +283,13 @@ body, html{
         border-width: 3px;
     }
 
+    .card-content-section-4{
+        padding: 0px 20px;
+    }
+
+    .section-1{
+        border-radius: 30px; /*заокругленість кутів фону банера*/
+    }
 }
 
 @media (max-width: 600px) {
@@ -352,14 +302,6 @@ body, html{
         --small: 12px;
     }
 
-    .span-4 {
-        grid-column: span 12; 
-    }
-
-    .span-3 {
-        grid-column: span 12; 
-    }
-
     .arrow-icon{
         height: 26px;
         width: 26px;
@@ -370,24 +312,15 @@ body, html{
     }
 
     .span-8-start-3{
-        grid-column: 1 / span 12;
+        grid-column: 2 / span 10;
     }
 
     .section-gap{
         margin-top: 60px;
     }
 
-    .section-1{
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
     .tittle{
         margin-bottom: 20px;
-    }
-
-    .span-4-start-8{
-        grid-column: 3 / span 8;
     }
 
     .sub-slogan{
@@ -397,10 +330,6 @@ body, html{
 
     .card-content-section-4{
         margin-top: 16px;
-    }
-
-    .button-wrapper{
-        margin-top: 40px;
     }
 
     .faq-padding{
@@ -431,18 +360,56 @@ body, html{
     .responsive-align{
         margin-bottom: 40px;
     }
-}
 
+    .section-1{
+        border-radius: 20px; /*заокругленість кутів фону банера*/
+        margin: 40px 0 60px 0;
+        padding: 60px 30px;
+    }
 
-@media (max-width: 460px) {
+    .card-content-section-4{
+        padding: 0px 10px;
+    }
+
     .container {
         max-width: none; 
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    .card-section-2{
+        border-radius: 16px; /*заокругленість кутів картки*/
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 460px) {
     .arrow-icon{
         height: 22px;
         width: 22px;
     }
+
+    .card-content-section-4{
+        padding: 0px 6px;
+    }
+
+    .span-8-start-3{
+        grid-column: 1 / span 12;
+    }
+
+    .span-6-start-4{
+        grid-column: 1 / span 12;
+    }
+
+    :root {
+        --h1: 28px;
+        --h2: 18px;
+        --label: 14px;
+        --body: 12px;
+        --accent: 16px;
+        --small: 10px;
+    }
+
 }
+

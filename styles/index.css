@@ -1,85 +1,136 @@
-
 /*КЛАСИ ЕЛЕМЕНТІВ ТЕКСТУ ------------------------------------------------------------------------------------------------------*/
+/*? використовується для заголовків розділів*/
 .tittle{
-    font-size: var(--h2); /*розмір тексту заголовків можна змінити туть*/
-    font-family: var(--ubuntu-font); /*шрифт заголовків можна змінити туть*/
+    font-size: var(--h2); /*розмір тексту можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт можна змінити туть*/
     font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
     color: var(--color-dark); /*колір тексту можна змінити туть*/
     margin-bottom: 40px;
 }
 
+/*? використовується для звичайного тексту всього сайту*/
 .usual-text{
-    font-size: var(--body); /*розмір тексту заголовків можна змінити туть*/
-    font-family: var(--roboto-font); /*шрифт заголовків можна змінити туть*/
-    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--body); /*розмір тексту*/
+    font-family: var(--roboto-font); /*шрифт тексту*/
+    font-weight: var(--font-weight-regular); /*жирність тексту (не жирний)*/
+    color: var(--color-dark); /*колір тексту*/
 }
 
+/*? використовується для футера із контактною інфою та для фрази "тип бізнесу" в банері*/
 .usual-text-bold{
-    font-size: var(--body); /*розмір тексту заголовків можна змінити туть*/
-    font-family: var(--roboto-font); /*шрифт заголовків можна змінити туть*/
-    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--body); /*розмір тексту*/
+    font-family: var(--roboto-font); /*шрифт тексту*/
+    font-weight: var(--font-weight-bold); /*жирність тексту (жирний)*/
+    color: var(--color-dark); /*колір тексту*/
 }
 
+/*? використовується для заголовків карток та для заголовків FAQ секції*/
 .label-text{
-    font-size: var(--label); /*розмір тексту заголовків карток можна змінити туть*/
-    font-family: var(--ubuntu-font); /*шрифт можна змінити туть*/
-    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--label); /*розмір тексту*/
+    font-family: var(--ubuntu-font); /*шрифт тексту*/
+    font-weight: var(--font-weight-bold); /*жирність тексту*/
+    color: var(--color-dark); /*колір тексту*/
 }
 
+/*? використовується для заголовків фактів*/
 .accent-text{
-    font-size: var(--accent); /*розмір тексту можна змінити туть*/
-    font-family: var(--ubuntu-font); /*шрифт можна змінити туть*/
-    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--accent); /*розмір тексту*/
+    font-family: var(--ubuntu-font); /*шрифт тексту*/
+    font-weight: var(--font-weight-bold); /*жирність тексту*/
+    color: var(--color-dark); /*колір тексту*/
 }
 
+/*? використовується для першої великої фрази на банері*/
 .slogan{
-    font-size: var(--h1); /*розмір тексту слогану можна змінити туть*/
-    font-family: var(--ubuntu-font); /*шрифт слогану можна змінити туть*/
-    font-weight: var(--font-weight-bold); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--h1); /*розмір тексту*/
+    font-family: var(--ubuntu-font); /*шрифт тексту*/
+    font-weight: var(--font-weight-bold); /*жирність тексту*/
+    color: var(--color-dark); /*колір тексту*/
 }
 
+/*? використовується для під-слогана на банері*/
 .sub-slogan{
-    font-size: var(--label); /*розмір тексту під-слогану можна змінити туть*/
-    font-family: var(--roboto-font); /*шрифт під-слогану можна змінити туть*/
-    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--label); /*розмір тексту*/
+    font-family: var(--roboto-font); /*шрифт*/
+    font-weight: var(--font-weight-regular); /*жирність*/
+    color: var(--color-dark); /*колір тексту*/
     margin-top: 40px;
     margin-bottom: 56px;
 }
 
+/*? використовується для останньої фрази футера*/
 .small-text{
-    font-size: var(--small); /*розмір тексту заголовків можна змінити туть*/
-    font-family: var(--roboto-font); /*шрифт заголовків можна змінити туть*/
-    font-weight: var(--font-weight-regular); /*жирність тексту можна змінити туть*/
-    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    font-size: var(--small); /*розмір тексту*/
+    font-family: var(--roboto-font); /*шрифт тексту*/
+    font-weight: var(--font-weight-regular); /*жирність тексту*/
+    color: var(--color-dark); /*колір тексту*/
 }
 
+/*? використовується для пунктів меню*/
 .menu-text{
-    font-family: var(--ubuntu-font); /*змінити шрифт менюшки можна туть*/
-    font-weight: var(--font-weight-bold); /*змінити жирність шрифта менюшки можна туть*/
-    font-size: var(--body); /*змінити розмір шрифта менюшки можна туть*/
-    color: var( --color-dark); /*змінити колір елементів меню можна туть*/
+    font-family: var(--ubuntu-font); /*шрифт*/
+    font-weight: var(--font-weight-bold); /*жирність шрифта*/
+    font-size: var(--body); /*розмір шрифта*/
+    color: var( --color-dark); /*колір тексту*/
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
+/*КЛАСИ, ЯКІ ВИКОРИСТОВУЮТЬСЯ ПО ВСЬОМУ САЙТІ ---------------------------------------------------------------------------------*/
+/*?загальний стиль для всіх кнопок*/
+.custom-button{
+    cursor: pointer;
+    font-size: var(--label); /*розмір тексту кнопки можна змінити туть*/
+    font-family: var(--ubuntu-font); /*шрифт кнопки можна змінити туть*/
+    font-weight: var(--font-weight-bold); /*жирність тексту кнопки можна змінити туть*/
+    color: var(--color-light); /*колір тексту можна змінити туть*/
+    background-color: var(--color-dark); /*колір самої кнопки можна змінити туть*/
+    border: solid; /*задати контур кнопки*/
+    border-color: transparent;
+    border-width: 4px;
+    border-radius: 18px; /*радіус кнопки можна змінити туть*/
+    padding: 16px 60px; 
+}
+
+/*?загальний стиль для всіх кнопок при наведенні мишкою*/
+.custom-button:hover{
+    color: var(--color-dark); /*колір тексту можна змінити туть*/
+    background-color: transparent; /*колір самої кнопки можна змінити туть*/
+    border-color: var(--color-dark);
+}
+
+.section-gap{
+    margin-top: 100px;
+}
+
+.gap-40px{
+    margin-bottom: 40px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
 /*КЛАСИ ДЛЯ НАВІГАЦІЙНОЇ ПАНЕЛІ -----------------------------------------------------------------------------------------------*/
+header{
+    position: sticky;
+    top: 0;
+    background: var(--color-light); /*колір фону навігаційної панелі*/
+}
+
+.navbar-menu-item:hover {
+    color: var(--color-grey-dark); /*колір тексту менюшки при наведенні мишкою*/
+}
+
+hr { 
+    border-style: solid; /*тип горизонтальної лінії навігаційної панельки*/
+    border-width: 2px; /*товщина лінії*/
+    border-color: var(--color-grey-dark); /*колір лінії*/
+}
+
 .navbar{ 
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px 0;
     justify-content: space-between;
-}
-
-header{
-    position: sticky;
-    top: 0;
-    background: white;
 }
 
 .align-box{
@@ -102,16 +153,9 @@ header{
 }
 
 .navbar-menu-item{
-    text-decoration: none; /*забирає дефолтні підкреслення посилань та інші налаштування браузера, не видаляти*/
+    text-decoration: none;
     padding: 10px 20px;
     border-width: 3px;
-    border-style: solid;
-    border-color: transparent;
-}
-
-.navbar-menu-item:hover {
-    border-radius: 12px;
-    border-color: var(--color-grey-dark);
 }
 
 .navbar-icons img{ 
@@ -121,29 +165,14 @@ header{
 .navbar-icons, .hide{
     display: none;
 }
-
-hr { 
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--color-grey-dark);
-}
-
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /*КЛАСИ ДЛЯ СЕКЦІЇ 1 - БАНЕР --------------------------------------------------------------------------------------------------*/
 .section-1{
-    margin-top: 60px;
-    margin-bottom: 100px;
-    background-color: var(--color-grey-light);
+    background-color: var(--color-grey-light); /*задній колір фону банера*/
+    border-radius: 40px; /*заокругленість кутів фону банера*/
+    margin: 60px 0 100px 0;
     padding: 80px 40px;
-    border-radius: 40px;
-}
-
-.image-center{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .image-main{
@@ -155,18 +184,17 @@ hr {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /* КЛАСИ ДЛЯ СЕКЦІЇ 2 - ПРО НАС -----------------------------------------------------------------------------------------------*/
-.section-2-cards-container{
-    margin-top: -24px;
-}
-
 .card-section-2{
     background-color: var(--color-grey-light); /*колір карток можна змінити туть*/
-    height: auto;
+    border-radius: 22px; /*заокругленість кутів картки*/
     padding: 40px;
-    border-radius: 22px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 24px; 
+}
+
+.section-2-cards-container{
+    margin-top: -24px;
 }
 
 .gaps-for-card{
@@ -181,54 +209,40 @@ hr {
     display: block;
     border-radius: 20px;
 }
+
+.image-about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /* КЛАСИ ДЛЯ СЕКЦІЇ 3 - ЦІННОСТІ ----------------------------------------------------------------------------------------------*/
-.section-gap{
-    margin-top: 100px;
-}
-
-.gap-40px{
-    margin-bottom: 40px;
-}
-
+/*? немає окремих класів для цього розділу*/
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /* КЛАСИ ДЛЯ СЕКЦІЇ 4 - ФАКТИ -------------------------------------------------------------------------------------------------*/
 .section-4-container{
-    background-color: var(--color-grey-light);
-    padding-top: 60px;
-    padding-bottom: 80px;
+    background-color: var(--color-grey-light); /*колір заднього фону секції*/
+    padding: 60px 0 80px 0;
 }
+
 .card-tittle-section-4{
-    height: auto;
-    color: var(--color-grey-dark);
-    font-size: var(--h2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: var(--color-grey-dark); /*колір тексту заголовків фактів*/
     text-align: center;
     margin-top: 40px;
 }
 
 .card-content-section-4{
-    background-color: var(--color-grey-light);
-    height: auto;
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 0 30px;
     text-align: center;
     margin-top: 24px;
-    border-radius: 18px;
 }
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 /* КЛАСИ ДЛЯ СЕКЦІЇ 5 - КОМАНДА -----------------------------------------------------------------------------------------------*/
 .card-section-5 {
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,16 +250,8 @@ hr {
     text-align: center;
 }
 
-.gap-30px {
-  margin-top: 30px;
-}
-
-.gap-16px {
-  margin-top: 16px;
-}
-
 .name-box{
-    background-color: var(--color-grey-dark);
+    background-color: var(--color-grey-dark); /*колір заднього фону для імені*/
     padding: 16px 20px;
     width: 100%;
     border-radius: 16px;
@@ -256,12 +262,15 @@ hr {
 }
 
 .member-box{
-    background-color: var(--color-grey-light);
-    margin-top: 24px;
+    background-color: var(--color-grey-light); /*колір заднього фону позиції*/
     border-radius: 16px;
     width: 100%;
+    align-self: center;
 }
 
+.gap-24px{
+    margin-top: 24px;
+}
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -269,9 +278,7 @@ hr {
 .btn-align{
     margin-top: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;   
     align-items: center;
 }
 
@@ -282,10 +289,9 @@ hr {
 }
 
 .section-6{
-    background-color: var(--color-grey-light);
+    background-color: var(--color-grey-light); /*колір заднього фону секції*/
     padding: 60px 0;
 }
-
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -301,7 +307,6 @@ hr {
 .arrow-padding{
     padding: 20px 40px 20px 20px;
 }
-
 
 .arrow-icon{
     height: 40px;
@@ -324,7 +329,6 @@ summary {
     border-radius: 18px; /* заокруглення кутів можна задати тут */
 }
 
-/* Приховуємо маркер за замовчуванням, щоб поставити свій */
 summary::-webkit-details-marker {
     display: none;
 }
@@ -336,7 +340,7 @@ summary::-webkit-details-marker {
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* КЛАСИ ДЛЯ ФУТЕРА -----------------------------------------------------------------------------------------------*/
+/* КЛАСИ ДЛЯ ФУТЕРА -----------------------------------------------------------------------------------------------------------*/
 .center-footer{
     display: flex;
     justify-content: center;
